@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Scenario Study</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .scenario-select {
+            margin-bottom: 20px;
+        }
+        .scenario-content {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cybersecurity Scenario Study</h1>
+        <ul>
+            <li>Use the prompts below to help you achieve the goals of this scenario.</li>
+            <li>You may need to use a prompt multiple times to get all the information you need.</li>
+            <li>There are no right or wrong answers.</li>
+            <li>Once you feel you have a good understanding of the situation and how to achieve the goals, you're finished with this scenario.</li>
+        </ul>        
+        <div class="scenario-select">
+            <h2>Choose a scenario:</h2>
+            <button onclick="showScenario('malware')">Malware Infection</button>
+            <button onclick="showScenario('social')">Social Media Hacked</button>
+        </div>
+
+        <div id="malware" class="scenario-content">
+            <h2>Malware Infection</h2>
+            <p>You downloaded a program from the internet, and now your computer is acting strange. It's slow, you see weird ads, and websites look different than usual. This might be caused by bad software that can spy on you and steal your information. Be careful about what you download! </p>
+            <h3>What happens:</h3>
+            <ul>
+                <li>The bad software can steal your passwords and other private things.</li>
+                <li>It can cause your computer to do bad things without you knowing.</li>
+            </ul>
+            <h3>Goals:</h3>
+            <ol>
+                <li>Figure out what the bad software is.</li>
+                <li>Protect your important information.</li>
+            </ol>
+            <h3>Prompts:</h3>
+            <p>The following prompts are ready-to-use prompts. The content in [] is replaceable, If you decide on certain thing which can be replaced. Please do.</p>
+            <ul>
+                <li>Are there any variations of [Malware] that are becoming more common/frequent?</li>
+                <li>What are the signs of a system getting corrupted by [Malware]?</li>
+                <li>What are the potential consequences of a successful [Malware] attack on one’s systems or data?</li>
+                <li>Define a checklist which helps a user for checking their device against [Malware].</li>
+                <li>Which vulnerabilities exist in a system, making them susceptible to [Malware]? (CAN BE USED AFTER ANALYSING LOGS)</li>
+                <li>What specific threats can be effectively mitigated by someone proficient in [Malware Analysis]?</li>
+                <li>Are there certifications specifically designed to address and mitigate [Malware]?</li>
+                <li>Which certifications demonstrate strong knowledge for combating [Malware]?</li>
+                <li>What are the immediate steps to take if we suspect a [Malware] is in progress?</li>
+                <li>What incident response procedures should be initiated if we detect signs of a potential [Malware]?</li>
+                <li>If successful, which threat would have the most severe impact?</li>
+                <li>What are the immediate risks if [vulnerability] exploited by [Malware] is compromised?</li>
+                <li>Are there high effects, where [vulnerability] exploited by [Malware] being exploited leads to the compromise of other systems?</li>
+                <li>What forensic tools or techniques could help us trace [Malware] back to the initial point of entry?</li>
+                <li>Can analyzing our incident logs help identify indicators of past attempts to exploit our systems using [Malware]?</li>
+                <li>Are there any industry-recognized training programs or certifications that would build a team's skills in defending against [Malware]?</li>
+                <li>What skills would be most valuable in developing effective mitigations against [Malware]?</li>
+                <li>In a crisis, which [threats related to Malware] could someone with [skills] help to mitigate?</li>
+            </ul>               
+        </div>
+
+        <div id="social" class="scenario-content">
+            <h2>Social Media Got Hacked</h2>
+            <p>You use the same password for many things online. Someone stole your password from one website. Now, they might be able to get into your other accounts too. It's important to use different passwords for everything! </p>
+            <h3>What happens:</h3>
+            <ul>
+                <li>The bad guys can get into your email, bank accounts, and other important things.</li>
+                <li>They can steal your money or pretend to be you online.</li>
+            </ul>
+            <h3>Goals:</h3>
+            <ol>
+                <li>Figure out how they stole your password.</li>
+                <li>Make sure all your online accounts are safe.</li>
+            </ol>
+            <h3>Prompts:</h3>
+            <p>The following prompts are ready-to-use prompts. The content in [] is replaceable, If you decide on certain thing which can be replaced. Please do.</p>
+            <ul>
+                <li>What proactive measures can we implement to mitigate the risk of [Account Hijacking]?</li>
+                <li>Are there any emerging trends or new techniques being used by threat actors in the [Account Hijacking] landscape?</li>
+                <li>Which [Account Hijacking] attacks pose the greatest risk to our critical assets and business operations? (DEFINE OUR)</li>
+                <li>What are the recommended priorities for patching [vulnerabilities related to account security] or focus on other risk reduction measures?</li>
+                <li>Could analyzing one’s own incident logs reveal past attempts to exploit [vulnerabilities related to account security]?</li>
+                <li>What incident response procedures should be initiated if we detect signs of a potential [Account Hijacking]?</li>
+                <li>What forensic tools or techniques could help us trace [Account Hijacking] back to the initial point of entry?</li>
+                <li>Are there highly effective compensating controls we could implement more quickly than patching [vulnerabilities related to account security]?</li>
+                <li>Does [Security Analyst] need specialized tools or access to systems to conduct the investigation effectively?</li>
+                <li>What are the current escalation procedures if [Security Analyst] encounters obstacles during remediation?</li>
+                <li>What specific threats can be effectively mitigated by someone proficient in [password management]?</li>
+                <li>Are there certifications specifically designed to address and mitigate [Account Hijacking]?</li>
+                <li>Are there any industry-recognized training programs or certifications that would build a team's skills in defending against [Account Hijacking]?</li>
+                <li>What skills would be most valuable in developing effective mitigations against [Account Hijacking]?</li>
+                <li>In a crisis, which [threats related to Account Hijacking] could someone with [password management skills] help to mitigate?</li>
+            </ul>               
+        </div>
+    </div>
+
+    <script>
+        function showScenario(scenarioId) {
+            // Hide all scenarios
+            var scenarios = document.getElementsByClassName('scenario-content');
+            for (var i = 0; i < scenarios.length; i++) {
+                scenarios[i].style.display = 'none';
+            }
+
+            // Show the selected scenario
+            document.getElementById(scenarioId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
